@@ -10,6 +10,8 @@ if [ $# -ne 1 ]; then
 
 fi
 
+domain=$1
+
 hostname=`echo -n "www."$domain`
 
 dnskey=`dig dnskey $domain +short`
